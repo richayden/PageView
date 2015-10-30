@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		9CA45BB71BC84724008561B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA45BB61BC84724008561B0 /* AppDelegate.swift */; };
-		9CA45BB91BC84724008561B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA45BB81BC84724008561B0 /* ViewController.swift */; };
 		9CA45BBC1BC84724008561B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA45BBA1BC84724008561B0 /* Main.storyboard */; };
 		9CA45BBE1BC84724008561B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA45BBD1BC84724008561B0 /* Assets.xcassets */; };
 		9CA45BC11BC84724008561B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA45BBF1BC84724008561B0 /* LaunchScreen.storyboard */; };
 		9CA45BCC1BC84724008561B0 /* PageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA45BCB1BC84724008561B0 /* PageViewTests.swift */; };
 		9CA45BD71BC84724008561B0 /* PageViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA45BD61BC84724008561B0 /* PageViewUITests.swift */; };
+		9CF0EE241BCB371700ECF726 /* AppleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0EE231BCB371700ECF726 /* AppleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9CF0EE261BCB375A00ECF726 /* BananaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0EE251BCB375A00ECF726 /* BananaViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9CF0EE281BCB388300ECF726 /* GrapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0EE271BCB388300ECF726 /* GrapeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9CF0EE2E1BCB39C100ECF726 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0EE2D1BCB39C100ECF726 /* PageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9CF0EE301BCB418500ECF726 /* KiwiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0EE2F1BCB418500ECF726 /* KiwiViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		9CA45BB31BC84723008561B0 /* PageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA45BB61BC84724008561B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CA45BB81BC84724008561B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9CA45BBB1BC84724008561B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CA45BBD1BC84724008561B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CA45BC01BC84724008561B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		9CA45BD21BC84724008561B0 /* PageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA45BD61BC84724008561B0 /* PageViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewUITests.swift; sourceTree = "<group>"; };
 		9CA45BD81BC84724008561B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CF0EE231BCB371700ECF726 /* AppleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleViewController.swift; sourceTree = "<group>"; };
+		9CF0EE251BCB375A00ECF726 /* BananaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BananaViewController.swift; sourceTree = "<group>"; };
+		9CF0EE271BCB388300ECF726 /* GrapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrapeViewController.swift; sourceTree = "<group>"; };
+		9CF0EE2D1BCB39C100ECF726 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		9CF0EE2F1BCB418500ECF726 /* KiwiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KiwiViewController.swift; path = ../KiwiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		9CA45BAA1BC84723008561B0 = {
 			isa = PBXGroup;
 			children = (
+				9CF0EE2D1BCB39C100ECF726 /* PageViewController.swift */,
 				9CA45BB51BC84723008561B0 /* PageView */,
 				9CA45BCA1BC84724008561B0 /* PageViewTests */,
 				9CA45BD51BC84724008561B0 /* PageViewUITests */,
@@ -98,8 +107,11 @@
 			isa = PBXGroup;
 			children = (
 				9CA45BB61BC84724008561B0 /* AppDelegate.swift */,
-				9CA45BB81BC84724008561B0 /* ViewController.swift */,
 				9CA45BBA1BC84724008561B0 /* Main.storyboard */,
+				9CF0EE231BCB371700ECF726 /* AppleViewController.swift */,
+				9CF0EE251BCB375A00ECF726 /* BananaViewController.swift */,
+				9CF0EE271BCB388300ECF726 /* GrapeViewController.swift */,
+				9CF0EE2F1BCB418500ECF726 /* KiwiViewController.swift */,
 				9CA45BBD1BC84724008561B0 /* Assets.xcassets */,
 				9CA45BBF1BC84724008561B0 /* LaunchScreen.storyboard */,
 				9CA45BC21BC84724008561B0 /* Info.plist */,
@@ -255,8 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA45BB91BC84724008561B0 /* ViewController.swift in Sources */,
+				9CF0EE281BCB388300ECF726 /* GrapeViewController.swift in Sources */,
+				9CF0EE261BCB375A00ECF726 /* BananaViewController.swift in Sources */,
+				9CF0EE2E1BCB39C100ECF726 /* PageViewController.swift in Sources */,
 				9CA45BB71BC84724008561B0 /* AppDelegate.swift in Sources */,
+				9CF0EE301BCB418500ECF726 /* KiwiViewController.swift in Sources */,
+				9CF0EE241BCB371700ECF726 /* AppleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +499,7 @@
 				9CA45BDD1BC84724008561B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CA45BDE1BC84724008561B0 /* Build configuration list for PBXNativeTarget "PageViewTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +508,7 @@
 				9CA45BE01BC84724008561B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CA45BE11BC84724008561B0 /* Build configuration list for PBXNativeTarget "PageViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +517,7 @@
 				9CA45BE31BC84724008561B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

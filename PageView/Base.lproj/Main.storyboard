@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7we-lr-m6p">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Kiwi View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="KiwiViewController" id="BYZ-38-t0r" customClass="KiwiViewController" customModule="PageView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,149 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bj1-gb-Zdu">
+                                <rect key="frame" x="261" y="281" width="78" height="39"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bj1-gb-Zdu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FnO-R7-6lC"/>
+                            <constraint firstItem="Bj1-gb-Zdu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SVk-4D-NK7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="kiwiLabel" destination="Bj1-gb-Zdu" id="rIr-lV-pxI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2234" y="724"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="NoU-eC-wEH">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="7we-lr-m6p" customClass="PageViewController" customModule="PageView" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="h9t-dg-d3X" kind="show" identifier="appleSegue" id="b5A-Lw-teP"/>
+                        <segue destination="dZv-sc-N0V" kind="show" identifier="bananaSegue" id="e7S-cd-bfP"/>
+                        <segue destination="fb4-lO-0C8" kind="show" identifier="grapeSegue" id="OxY-9O-9oy"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="kiwiSegue" id="IhC-yU-zRR"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TJ6-2v-h63" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192" y="-235"/>
+        </scene>
+        <!--Apple View Controller-->
+        <scene sceneID="ul0-Bh-pGv">
+            <objects>
+                <viewController storyboardIdentifier="AppleViewController" id="h9t-dg-d3X" customClass="AppleViewController" customModule="PageView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wJZ-mL-kaG"/>
+                        <viewControllerLayoutGuide type="bottom" id="FBg-qR-7na"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D3g-uv-UdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ya5-GJ-njC">
+                                <rect key="frame" x="261" y="281" width="78" height="39"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ya5-GJ-njC" firstAttribute="centerY" secondItem="D3g-uv-UdC" secondAttribute="centerY" id="RjF-04-NEg"/>
+                            <constraint firstItem="ya5-GJ-njC" firstAttribute="centerX" secondItem="D3g-uv-UdC" secondAttribute="centerX" id="Wfo-tE-Iyq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appleLabel" destination="ya5-GJ-njC" id="Ggp-zh-Rd0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d2N-s5-Gxk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231" y="717"/>
+        </scene>
+        <!--Banana View Controller-->
+        <scene sceneID="t7b-d1-IAd">
+            <objects>
+                <viewController storyboardIdentifier="BananaViewController" id="dZv-sc-N0V" customClass="BananaViewController" customModule="PageView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rjL-xf-2yd"/>
+                        <viewControllerLayoutGuide type="bottom" id="TCs-oc-4my"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Uy-2r-cL2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlS-Ju-vah">
+                                <rect key="frame" x="261" y="281" width="78" height="39"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nlS-Ju-vah" firstAttribute="centerX" secondItem="3Uy-2r-cL2" secondAttribute="centerX" id="3dd-jL-fuY"/>
+                            <constraint firstItem="nlS-Ju-vah" firstAttribute="centerY" secondItem="3Uy-2r-cL2" secondAttribute="centerY" id="qfB-QH-t1O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bananaLabel" destination="nlS-Ju-vah" id="EJG-0v-hgJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ag2-lA-kod" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="717"/>
+        </scene>
+        <!--Grape View Controller-->
+        <scene sceneID="Qnt-MW-PWE">
+            <objects>
+                <viewController storyboardIdentifier="GrapeViewController" id="fb4-lO-0C8" customClass="GrapeViewController" customModule="PageView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ssH-zW-Kw8"/>
+                        <viewControllerLayoutGuide type="bottom" id="m6m-ES-wof"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hXy-PH-TMK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIu-02-XhU">
+                                <rect key="frame" x="261" y="281" width="78" height="39"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hIu-02-XhU" firstAttribute="centerY" secondItem="hXy-PH-TMK" secondAttribute="centerY" id="AeV-eo-Fck"/>
+                            <constraint firstItem="hIu-02-XhU" firstAttribute="centerX" secondItem="hXy-PH-TMK" secondAttribute="centerX" id="s3T-cI-rIY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="grapeLabel" destination="hIu-02-XhU" id="jhq-jx-dkn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4s5-cH-MPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1568" y="717"/>
         </scene>
     </scenes>
 </document>
